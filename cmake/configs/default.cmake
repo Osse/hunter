@@ -171,12 +171,7 @@ hunter_config(xrender VERSION 0.9.7)
 hunter_config(xshmfence VERSION 1.2)
 hunter_config(xtrans VERSION 1.2.7)
 hunter_config(xxf86vm VERSION 1.1.2)
-
-if(MINGW OR MSVC80)
-  hunter_config(GTest VERSION 1.7.0-hunter-6)
-else()
-  hunter_config(GTest VERSION 1.8.0-hunter-p2)
-endif()
+hunter_config(GTest VERSION 1.8.0-hunter-p2_mingw_build_fix)
 
 if(ANDROID)
   string(COMPARE EQUAL "${ANDROID_NATIVE_API_LEVEL}" "" _is_empty)

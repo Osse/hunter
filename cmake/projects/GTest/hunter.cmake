@@ -151,6 +151,17 @@ hunter_add_version(
     93148cb8850abe78b76ed87158fdb6b9c48e38c4
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    GTest
+    VERSION
+    1.8.0-hunter-p2_mingw_build_fix
+    URL
+    "${CMAKE_CURRENT_LIST_DIR}/hunter_mingw_fix.zip"
+    SHA1
+    00de74e2b526dd3a5c537eb2a4804e1f39c74537
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(GTest)
 hunter_download(PACKAGE_NAME GTest PACKAGE_INTERNAL_DEPS_ID 1)
