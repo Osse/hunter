@@ -161,6 +161,17 @@ hunter_add_version(
     SHA1 3325aa4fc8b30e665c9f73a60f19387b7db36f85
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    GTest
+    VERSION
+    1.8.0-hunter-p2_mingw_build_fix
+    URL
+    "${CMAKE_CURRENT_LIST_DIR}/hunter_mingw_fix.zip"
+    SHA1
+    00de74e2b526dd3a5c537eb2a4804e1f39c74537
+)
+
 if(HUNTER_GTest_VERSION VERSION_LESS 1.8.0)
   set(_gtest_license "LICENSE")
 else()
