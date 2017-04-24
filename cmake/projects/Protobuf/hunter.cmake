@@ -10,6 +10,17 @@ hunter_add_version(
     PACKAGE_NAME
     Protobuf
     VERSION
+    "3.2.1"
+    URL
+    "https://github.com/Osse/protobuf/archive/v3.2.1-hunter-1.tar.gz"
+    SHA1
+    94f80c99ae777688d255deef2e0da49437ff4e07
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Protobuf
+    VERSION
     "3.0.0-p1"
     URL
     "https://github.com/hunter-packages/protobuf/archive/v3.0.0-hunter-3.tar.gz"
